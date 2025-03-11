@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(6, 37, 63);
+}
+
+.formulario{
+    border-radius: 20%;
+    background-color:black;
+    margin: 15% 40%;
+    width: 20%;
+    padding: 2%;
+}
+
+input{
+    border-radius: 5%;
+    background-color: black;
+    color: yellow;
+}
+
+.botao:hover{
+    background-color: yellow;
+    color: black;
+}

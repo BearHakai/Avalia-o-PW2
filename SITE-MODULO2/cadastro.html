@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <script src="./js/cadastro.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container-principal">
+        <div class="formulario">
+
+            <center>
+            <form id="form-login" onsubmit="cadastrar(event)">
+                <input type="text" placeholder="Usuário:" id="user" required="true" minlength="4" maxlength="10">
+                <br><br>
+                <input type="email" placeholder="E-mail:" id="email" required="true">
+                <br><br>
+                <input type="password" placeholder="Senha:" id="senha" required="true" minlength="6" maxlength="8">
+                <br><br>
+                <input type="password" placeholder="Confirmar Senha:" id="confirmSenha" required="true" minlength="6" maxlength="8">
+                <br><br>
+                <input type="submit" value="Cadastrar"  class="botao" onclick="cadastrar();return false;">
+                <br><br>
+                <input type="submit" value="Já Possui Conta?" class="botao" id="btn" onclick="location.href = './html/login.html'">
+            </form>
+            </center>
+        </div>
+    </div>
+</body>
+</html>
